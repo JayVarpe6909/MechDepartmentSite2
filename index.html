@@ -1962,7 +1962,7 @@
                 <p style="color:var(--steel); margin-bottom:24px; font-size:15px;">
                     Each subject follows the SPPU assessment pattern: <span style="color:var(--secondary)">2 CIA
                         Tests</span>, <span style="color:var(--accent)">1 End-Semester Examination</span>, <span
-                        style="color:#90ee90">Lab Exam</span> (where applicable), and <span style="color:#99b4ff">Group
+                        style="color:#99b4ff">Lab Exam</span> (where applicable), and <span style="color:#99b4ff">Group
                         Activity</span>.
                 </p>
                 <div class="year-tabs">
@@ -2225,7 +2225,7 @@
 
         function buildSubjectCard(name) {
             const hasLab = ['Metallurgy', 'Graphics', 'Manufacturing', 'Automation', 'CAD', 'Refrigeration', 'Heat Transfer', 'IoT', 'Programming', 'Electrical', 'Fluid', 'Strength', 'Theory of Machine', 'Dynamics', 'Measurement', 'BEE'].some(k => name.includes(k.split(' ')[0]));
-            return `<div class="subject-card"><div class="subject-name">${name}</div><div class="assessment-row"><span class="badge badge-cia">CIA-1</span><span class="badge badge-cia">CIA-2</span><span class="badge badge-end">End-Sem</span>${hasLab ? '<span class="badge badge-lab">Lab Exam</span>' : ''}<span class="badge badge-grp">Group Activity</span></div></div>`;
+            return `<div class="subject-card"><div class="subject-name">${name}</div><div class="assessment-row"><span class="badge badge-cia">CIA-1</span><span class="badge badge-cia">CIA-2</span><span class="badge badge-end">End-Sem</span>${hasLab ? '<span class="badge badge-lab"></span>' : ''}<span class="badge badge-grp">Group Activity</span></div></div>`;
         }
 
         Object.entries(academicsData).forEach(([yr, subjects]) => {
